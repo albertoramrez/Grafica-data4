@@ -1,0 +1,79 @@
+#chart{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 50px;
+  bottom: 70px;
+  height: 70%;
+  width: 100%;
+}
+
+.filters{
+  height: 50px;
+  max-width: 50px;
+}
+
+.selection{
+  position: fixed;
+  bottom: 20px;
+  left: 130px;
+  max-width: 300px;
+}
+
+body {
+    font: 14px sans-serif;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis path{
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.bar {
+    fill: steelblue;
+}
+
+.select {
+    position: relative;
+    width: 150px;
+    left:80px;
+    top: 30px;
+}
+
+.select-year {
+    position: relative;
+    width: 70px;
+    left:275px;
+    top: 9px;
+}
+
+.select-data {
+    position: absolute;
+    width: 150px;
+    left: 370px;
+    top: 30px;
+}
+
+@media all and (max-width: 480px){
+  select {
+     width: 100%; max-width: 100%;
+     position: relative;
+  }
+  .select-data{
+    width: 100%; max-width: 100%;
+    position: relative;
+    left: 100px;
+    top: 30px;
+  }
+  .filters{
+    width: 70%; max-width: 50%;
+  }
+}
+
+h2{
+  text-align: center;
+}

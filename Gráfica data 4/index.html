@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Indice de Desarrollo Humano</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  </head>
+  <body>
+    <h2>Indice de Desarrollo Humano, México (2015 - 2017)</h2>
+    <div ng-app="graphidh">
+      <div ng-controller="mainCtrl">
+        <!--<div class="hidden-xs">-->
+          <bar-chart id="chart" width="1080" height="1100" data="data" selectedstate="selectoption" year="years" sort="sorted"></bar-chart>
+        <!-- </div>-->
+        <!--<div id="mchart" class="visible-xs-block" width="767" height="1100"></div>-->
+      </div>
+    </div>
+		<div class="selection">
+			<p id="selected-state"></p>
+			<p id="text-idh"></p>
+		</div>
+
+    <!-- Modules -->
+    <script src="JS/Module/module.js"></script>
+
+    <!-- Controllers -->
+    <script src="JS/Controller/controller.js"></script>
+
+    <!-- Directives -->
+    <script src="JS/Directive/directive.js"></script>
+  </body>
+</html>
